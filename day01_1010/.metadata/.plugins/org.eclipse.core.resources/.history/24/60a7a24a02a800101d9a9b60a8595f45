@@ -1,0 +1,43 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+@SpringBootApplication
+public class Demo31Application {
+    private static final Logger log = LoggerFactory.getLogger(Demo31Application.class);
+
+	public interface Car { public String getColor();}
+	
+	public class Sonata implements Car{
+		public Sonata() {
+			log.info("=== 출고 ===Sonata");
+		}
+		@Override
+		public String getColor() {
+			return "=== 색상:RED === Sonata";
+		}
+	}
+	public class K5 implements Car{
+		public K5() {
+			log.info("=== 출고===K5");
+		}
+		@Override
+		public String getColor() {
+			return "=== 색상:YELLOW ===K5";
+		}
+	}
+	public String ex324() {
+		Car car1 = new Sonata();
+		String re1 = car1.getColor();
+		Car car2 = new K5();
+		String re2 = car2.getColor();
+		
+		String result = re1 + "<br>" + re2 + "<br>" + "차 두대를 출고 하였음";
+		return result;
+	}
+	
+
+}

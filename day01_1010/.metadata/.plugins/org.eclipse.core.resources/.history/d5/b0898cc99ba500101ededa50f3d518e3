@@ -1,0 +1,16 @@
+package com.example.demo.service;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MyService {
+	
+	private static final LoggerFactory log= LoggerFactory.getLogger(MyService.class);
+	
+	public String sayHello(String hi) {
+		String msg = hi + "좋은날";
+		return msg;
+	}
+
+}

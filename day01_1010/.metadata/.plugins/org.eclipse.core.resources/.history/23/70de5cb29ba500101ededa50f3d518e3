@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MyService {
+	
+	public String sayHello(String hi) {
+		String msg = hi + "좋은날";
+		return msg;
+	}
+
+}
