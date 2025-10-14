@@ -43,4 +43,38 @@ public class MyController {
 	public String ex331() {
 		return myService.ex331();
 	}
+	@GetMapping("/ex332")
+	public String ex332() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex334")
+	public String ex334() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex335")
+	public String ex335() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex336")
+	public String ex336() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex337")
+	public String ex337() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex338")
+	public String ex338() {
+		return myService.ex331();
+	}
+	@GetMapping("/ex339")
+	public String ex339() {
+		return myService.ex331();
+	}
+	
+	@GetMapping("/ex3310")
+	public String ex3310() {
+		return myService.ex331();	
+	}
+	
 }

@@ -3,10 +3,11 @@ package com.example.demo.service;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
+import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import java.util.stream.Collectors;
 
 @Service
 public class MyService {
@@ -98,4 +99,83 @@ public class MyService {
         list.sort((str1, str2) -> str1.compareTo(str2));
         return list.toString();
     }
-}
+    public String ex332() {
+    	List list = new ArrayList<String>();
+
+        list.add("public");
+        list.add("static");
+        list.add("void");
+
+        list.stream().forEach(str -> System.out.println(str));
+        return "콘솔 출력";
+    }
+    public String ex334() {
+    	 Integer[] integerArray = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+         List<Integer> list = Arrays.asList(integerArray);
+
+         List evenList = list.stream()
+                 .filter(value -> value % 2 == 0).collect(Collectors.toList());
+
+         evenList.stream().forEach(value -> System.out.println(value));
+        return "콘솔 출력";
+    }
+    public String ex335() {
+        Integer[] integerArray = new Integer[]{1, 2, 3, 4, 5};
+        List<Integer> list = Arrays.asList(integerArray);
+        list.stream().forEach(value -> System.out.println(value));
+        return "콘솔 출력";
+    }
+    public String ex336() {
+    Integer[] integerArray = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    List<Integer> list = Arrays.asList(integerArray);
+    List evenList = list.stream()
+           .filter(value -> value % 2 == 0).collect(Collectors.toList());
+    evenList.stream().forEach(value -> System.out.println(value));
+    return "콘솔 출력";
+    }
+    public String ex337() {
+    	Integer[] integerArray = new Integer[]{1, 1, 1, 1, 2, 2, 2, 3, 3, 4};
+        List<Integer> list = Arrays.asList(integerArray);
+        List<Integer> distinctList = list.stream().distinct().toList();
+        distinctList.stream().forEach(value -> System.out.println(value));
+        return "콘솔 출력";
+    }
+    public String ex338() {
+    	String[] lowercaseArray = new String[]{"public", "static", "void"};
+        List<String> lowercaseList = Arrays.asList(lowercaseArray);
+        List<String> uppercaseList = lowercaseList.stream()
+                .map(value -> value.toUpperCase()).toList();
+        uppercaseList.stream().forEach(value -> System.out.println(value));
+    return "콘솔 출력";
+    }
+    public String ex339() {
+        String isThisNull = getSomeString();
+
+        if (null != isThisNull) {
+            System.out.println(isThisNull.toUpperCase());
+        } else {
+            System.out.println("값이 null입니다.");
+        }
+
+        return "콘솔 출력";
+    }
+
+    private String getSomeString() {
+        return null;
+    }
+    public String ex3310() {
+        String isThisNull = getSomeString2();
+
+        if (isThisNull != null) {
+            System.out.println(isThisNull.toUpperCase());
+        } else {
+            System.out.println("값이 null입니다.");
+        }
+
+        return "콘솔 출력";
+    }
+
+    private String getSomeString2() {
+        return null;
+    }
+    }
