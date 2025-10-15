@@ -6,6 +6,8 @@ import com.example.demo.controller.MyController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class MyService {
@@ -20,4 +22,9 @@ public String ex3312() {
     	
     	return "콘솔 출력";
     }
+public String ex521() {
+			return "Hello";
+		}
+	
 }
+

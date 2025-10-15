@@ -11,4 +11,8 @@ public class SimpleRestController {
     public String hello() {
         return "<Strong><h1>초 기 화 면</h1></Strong>";
     }
+    @RequestMapping("/bye")
+    public String bye() {
+    	return "BYE";
+    }
 }

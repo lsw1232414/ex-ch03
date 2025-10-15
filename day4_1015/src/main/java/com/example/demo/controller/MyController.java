@@ -22,5 +22,9 @@ public class MyController {
 	public String ex3311() {
 		return myService.ex3312();
 	}
+	@GetMapping("/ex521")
+	public String ex521() {
+		return myService.ex521();
+	}
 	
 }
