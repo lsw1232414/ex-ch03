@@ -22,9 +22,5 @@ public String ex3312() {
     	
     	return "콘솔 출력";
     }
-public String ex521() {
-			return "Hello";
-		}
-	
 }
 
