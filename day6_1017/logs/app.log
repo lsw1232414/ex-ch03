@@ -407,3 +407,17 @@
 2025-10-17T14:22:45.487+09:00  INFO 3420 --- [day6_1017] [RMI TCP Connection(105)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2025-10-17T14:22:45.489+09:00  INFO 3420 --- [day6_1017] [RMI TCP Connection(105)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-17T14:22:45.492+09:00  INFO 3420 --- [day6_1017] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-17T14:22:48.365+09:00  INFO 12612 --- [day6_1017] [main] com.lsw.myform.Day61017Application       : Starting Day61017Application using Java 21.0.8 with PID 12612 (C:\prac\ex-ch03\day6_1017\bin\main started by YONSAI in C:\prac\ex-ch03\day6_1017)
+2025-10-17T14:22:48.366+09:00  INFO 12612 --- [day6_1017] [main] com.lsw.myform.Day61017Application       : No active profile set, falling back to 1 default profile: "default"
+2025-10-17T14:22:48.867+09:00  INFO 12612 --- [day6_1017] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-17T14:22:48.876+09:00  INFO 12612 --- [day6_1017] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-17T14:22:48.876+09:00  INFO 12612 --- [day6_1017] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-17T14:22:48.906+09:00  INFO 12612 --- [day6_1017] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-17T14:22:48.906+09:00  INFO 12612 --- [day6_1017] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 517 ms
+2025-10-17T14:22:48.965+09:00  INFO 12612 --- [day6_1017] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-17T14:22:49.117+09:00  INFO 12612 --- [day6_1017] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-10-17T14:22:49.155+09:00  INFO 12612 --- [day6_1017] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-17T14:22:49.160+09:00  INFO 12612 --- [day6_1017] [main] com.lsw.myform.Day61017Application       : Started Day61017Application in 1.07 seconds (process running for 1.685)
+2025-10-17T14:22:50.063+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-17T14:22:50.063+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-17T14:22:50.064+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
