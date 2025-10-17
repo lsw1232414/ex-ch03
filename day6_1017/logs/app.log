@@ -421,3 +421,6 @@
 2025-10-17T14:22:50.063+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-10-17T14:22:50.063+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-17T14:22:50.064+09:00  INFO 12612 --- [day6_1017] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-17T15:02:37.971+09:00  INFO 12612 --- [day6_1017] [RMI TCP Connection(50)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-17T15:02:37.973+09:00  INFO 12612 --- [day6_1017] [RMI TCP Connection(50)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-17T15:02:37.977+09:00  INFO 12612 --- [day6_1017] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
