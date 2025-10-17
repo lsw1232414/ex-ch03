@@ -30,4 +30,11 @@ public class MyForm {
 		String result = "제목: " + request.title() +"\n"+ "내용: " + request.content();
 		return result;
 	}
+	
+	@PostMapping("/article-auto")
+	public String articleAuto(ArticleRequest request) {
+		String result = "제목: " + request.title() +"\n"+ "내용: " + request.content();
+		return result;
+	}
 }
+	
