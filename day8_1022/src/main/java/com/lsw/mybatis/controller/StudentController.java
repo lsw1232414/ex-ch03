@@ -1,0 +1,75 @@
+package com.lsw.mybatis.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lsw.mybatis.domain.Student;
+import com.lsw.mybatis.service.StudentService;
+
+import lombok.RequiredArgsConstructor;
+
+@Controller
+@RequestMapping("/students")
+@RequiredArgsConstructor
+public class StudentController {
+	
+	private final StudentService studentService;
+	
+	@GetMapping
+	public String list(Model model) {
+		model.addAttribute("students", studentService.getAllStudents());
+		return "student/list";
+	}
+	
+	@GetMapping("/new")
+	public String createForm(Model model) {
+		model.addAttribute("student", new Student());
+		return "student/form";
+	}
+	@PostMapping
+	public String create(@ModelAttribute Student student) {
+		studentService.createStudent(student);
+		return "redirect:/students";
+	}
+
+    /*@GetMapping("/{id}/edit")
+    public String updateForm(@PathVariable Long id, Model model) {
+        Student student = studentService.getStudentById(id);
+        model.addAttribute("student", student);
+        return "student/form";
+    }*/
+    @GetMapping("/{id}/edit")
+    public String updateForm(@PathVariable Long id, Model model){
+        model.addAttribute("student", studentService.getStudent(id));
+        return "student/form";
+    }
+
+    @PostMapping("/{id}/edit")
+    public String update(@PathVariable Long id, @ModelAttribute Student student) {
+        student.setId(id);
+        studentService.updateStudent(student);
+        return "redirect:/students";
+    }
+    
+    @GetMapping("/{id}/delete")
+    public String delete(@PathVariable Long id) {
+        studentService.deleteStudent(id);
+        return "redirect:/students";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+package com.lsw.mybatis.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.RequiredArgsConstructor;
+
+@Controller
+@RequestMapping("/students")
+@RequiredArgsConstructor
+public class StudentController {
+	
+	private fianl StudentService studentService;
+	
+}
